@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Text Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Academic Text Checker</h1>
+            <p>Сервис для проверки научного стиля текста</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <textarea id="textInput" placeholder="Вставьте текст вашей научной работы здесь..."></textarea>
+                <button id="checkButton">Проверить текст</button>
+            </div>
+
+            <div id="resultsSection" class="results-section hidden">
+                <div class="summary">
+                    <h2>Результаты проверки</h2>
+                    <p id="totalIssues">Найдено замечаний: 0</p>
+                </div>
+                <div id="issuesList" class="issues-list"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Academic Text Checker</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
