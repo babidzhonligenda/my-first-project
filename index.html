@@ -16,15 +16,26 @@
         <main>
             <div class="input-section">
                 <textarea id="textInput" placeholder="Вставьте текст вашей научной работы здесь..."></textarea>
-                <button id="checkButton">Проверить текст</button>
+                <div class="button-group">
+                    <button id="clearButton" class="secondary-button">Очистить текст</button>
+                    <button id="checkButton">Проверить текст</button>
+                </div>
             </div>
 
-            <div id="resultsSection" class="results-section hidden">
+            <div id="resultsArea" class="results-section hidden">
                 <div class="summary">
                     <h2>Результаты проверки</h2>
-                    <p id="totalIssues">Найдено замечаний: 0</p>
+                    <div id="summaryReport" class="summary-report">
+                        <div id="summaryStats" class="summary-stats">
+                            <!-- Статистика по категориям будет здесь -->
+                        </div>
+                    </div>
+                    <p class="most-frequent">Частая проблема: <strong id="mostFrequentProblem">—</strong></p>
+                    <p class="total-issues">Найдено замечаний: <span id="totalCount">0</span></p>
                 </div>
-                <div id="issuesList" class="issues-list"></div>
+                <div id="resultsList" class="issues-list">
+                    <!-- Список карточек с замечаниями -->
+                </div>
             </div>
         </main>
 
