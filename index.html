@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Text Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Academic Text Checker</h1>
+            <p>Сервис для проверки научного стиля текста</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <textarea id="textInput" placeholder="Вставьте текст вашей научной работы здесь..."></textarea>
+                <div class="button-group">
+                    <button id="clearButton" class="secondary-button">Очистить текст</button>
+                    <button id="checkButton">Проверить текст</button>
+                </div>
+            </div>
+
+            <div id="resultsArea" class="results-section hidden">
+                <div class="summary">
+                    <h2>Результаты проверки</h2>
+                    <div id="summaryReport" class="summary-report">
+                        <div id="summaryStats" class="summary-stats">
+                            <!-- Статистика по категориям будет здесь -->
+                        </div>
+                    </div>
+                    <p class="most-frequent">Частая проблема: <strong id="mostFrequentProblem">—</strong></p>
+                    <p class="total-issues">Найдено замечаний: <span id="totalCount">0</span></p>
+                </div>
+                <div id="resultsList" class="issues-list">
+                    <!-- Список карточек с замечаниями -->
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Academic Text Checker</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
